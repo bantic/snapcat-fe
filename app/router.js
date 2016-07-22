@@ -6,6 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('image', {path: '/image/:token'});
 });
 
 export default Router;

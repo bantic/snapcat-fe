@@ -1,0 +1,11 @@
+{{#if isLoading}}
+  <h1>loading</h1>
+{{else}}
+  {{#if isNotFound}}
+    <h1>Not Found</h1>
+  {{else if isViewed}}
+    <h1>Already viewed</h1>
+  {{else}}
+    {{disappearing-image url=url}}
+  {{/if}}
+{{/if}}
