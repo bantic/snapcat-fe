@@ -43,7 +43,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.apiBase = 'https://snapcat-api.herokuapp.com';
+    ENV.tokenEndpoint = '/api/tokens/';
   }
 
   return ENV;
